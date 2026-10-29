@@ -3,49 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jiuyi Zheng — Computer Science PhD, machine learning, search and retrieval, LLM agents, and research projects.">
     <title>😃 Jiuyi Zheng</title>
     <style>
-        body { font-family: sans-serif; background-color: #f0f8ff; line-height: 1.6; margin: 20px; }
-        .container { max-width: 800px; margin: auto; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px 0 rgba(0,0,0,0.1); }
-        h1 { color: #333; }
-        h2 { color: #00008B; } /* Dark Blue Color */
+        body { font-family: sans-serif; background-color: #f0f8ff; color: #333; line-height: 1.6; margin: 20px; }
+        .container { max-width: 860px; margin: auto; background-color: #fff; padding: 24px 30px; border-radius: 10px; box-shadow: 0 0 10px 0 rgba(0,0,0,0.1); }
+        h1 { color: #333; margin-top: 0; }
+        h2 { color: #00008B; margin-top: 30px; padding-bottom: 6px; border-bottom: 1px solid #e5ecfa; }
         p, ul { margin: 10px 0; }
+        ul { padding-left: 22px; }
+        li { margin: 8px 0; }
+        .entry { margin-bottom: 18px; }
+        .details { margin: 6px 0 0; }
+        .details li { margin: 4px 0; }
+        .meta { color: #555; font-size: 0.94em; }
+        .skill { margin: 6px 0; }
         a { color: #0275d8; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        
+        a:focus-visible { outline: 2px solid #0275d8; outline-offset: 3px; }
+        @media (max-width: 600px) {
+            body { margin: 10px; }
+            .container { padding: 18px 16px; }
+            ul { padding-left: 19px; }
+            h1 { font-size: 1.65rem; }
+        }
     </style>
 </head>
 <body>
-<div class="container">
+<main class="container">
     <h1>😃 Jiuyi Zheng</h1>
     <p><strong>💬 WeChat:</strong> AHzhengjiuyi | <a href="mailto:jiuyi.zheng@outlook.com">📧 jiuyi.zheng@outlook.com</a> | <a href="http://www.linkedin.com/in/jiuyizheng" target="_blank">LinkedIn</a></p>
-    
-    <h2>💼 Experience</h2>
-    <ul>
-        <li><strong>iLakua Technology (Remote) — APM & AI Prompt Specialist Intern</strong><br>Oct 2022 - Present<br>🎨 Utilized chatGPT and Midjourney to create patterns and T-shirt designs, increasing pattern generation efficiency and saving more than 90% in costs. 🤝 Collaborated with the AI team to develop and refine prompt engineering strategies, improving AI model performance by 60%.</li>
-        <li><strong>University of Missouri Columbia MO — GTA</strong><br>Aug 2021 - Present<br>📚 Held office hours to answer questions about supervised learning classes and lab sessions, providing lectures and facilitating discussions to enhance student understanding of course material.</li>
-        <li><strong>Hefei Administrative Center Hefei, Anhui, China — Senior Staff</strong><br>Jul 2014 - Jun 2019<br>💻 Developed platform front-end, improving the performance of working systems and saving users 20% of the time by reorganizing datasets.</li>
-    </ul>
-    
-    <h2>🎓 Education</h2>
-    <ul>
-        <li><strong>University of Missouri, Columbia MO, USA — PhD</strong><br>Aug 2021 - Present, Master and PhD of Science in Computer Science, GPA: 3.8/4</li>
-        <li><strong>Tsinghua University, Beijing, China — Master</strong><br>Mar 2016 - Jan 2019, Master of Science in Computer Science</li>
-        <li><strong>Beijing Electronic Science and Technology Institute, Beijing, China — Bachelor</strong><br>Sep 2010 - Jun 2014, Bachelor of Science in Information and Computing Science</li>
-    </ul>
-    
-    <h2>🛠 Skills</h2>
-    <p>Programming Languages: Python, Java, C, JavaScript, HTML/CSS, NoSQL<br>Libraries: Python NumPy, Pandas, Scikit-learn, Pytorch</p>
-    
-    <h2>📁 Projects</h2>
-    <ul>
-        <li>🐦 Used various models including YOLOv5, YOLONAS, RetinaNet, and Faster-RCNN to detect birds in drone images and evaluate their performance.</li>
-        <li>🏠 Applied six different deep learning methods, including linear regression, decision trees, and neural networks, to predict house prices using the Boston housing dataset.</li>
-    </ul>
-    
-    <h2>📚 Publications</h2>
-    <p>"Detection Probability and Bias in Machine-Learning-Based Unoccupied Aerial System Non-Breeding Waterfowl Surveys" - Drones, Feb 6, 2024</p>
-    
+    <section><h2>💼 Experience</h2>
+<ul class="experience"><li class="entry"><strong>Google, Pittsburgh, PA —Software Engineer Intern (AI/ML Search Pipeline)</strong><br><span class="meta">May 2026 - Aug 2026</span><ul class="details"><li>Built a frontend-integrated AI help-link agent in TypeScript using the Moma API, replacing rigid manual mappings with context-aware retrieval of repair documentation for data center technicians.</li>
+<li>Designed a Protocol Buffer schema to capture and structure task metadata, allowing the agent to retrieve relevant documentation based on the technician’s current workflow and repair context.</li>
+<li>Developed a Python offline evaluation pipeline and benchmark dataset using BM25, keyword matching, and vector similarity to compare AI-generated recommendations against legacy static mappings and quantify retrieval improvements. The overall accuracy increased by about 20%</li>
+<li>Authored the technical design and drove alignment across frontend, backend, product, and operations stakeholders, securing approval for the proposed architecture and rollout plan.</li></ul></li>
+<li class="entry"><strong>Oracle, Pleasanton, CA —Software Engineer Intern (AI/ML Search Pipeline)</strong><br><span class="meta">May 2025 - Aug 2025</span><ul class="details"><li>Built and rolled out an OCI OpenSearch–based retrieval pipeline (BM25 + vector search), including index design, analyzers, and re-ranking. Achieved 90% nDCG@10 and 95% nDCG@100 across multi-dataset benchmarks.</li>
+<li>Designed and optimized formatted queries to enhance OpenSearch performance, and query relevance accuracy improved by 15%.</li></ul></li>
+<li class="entry"><strong>University of Missouri, Columbia, MO —Graduate Teaching &amp; Research Assistant</strong><br><span class="meta">Aug 2021 - Present</span><ul class="details"><li>Delivered technical instruction to classes of 20–60+ students in Algorithms, Machine Learning, and Data Visualization through lectures, hands-on labs, and problem-solving sessions.</li>
+<li>Explained complex topics including algorithmic reasoning, debugging, model behavior, and data analysis using code examples and step-by-step demonstrations tailored to different skill levels.</li>
+<li>Provided detailed technical feedback on student implementations and helped students reason about correctness, efficiency, and software design rather than simply providing solutions.</li>
+<li>Supported course delivery across lectures, labs, assessments, and student mentoring while collaborating with faculty on effective ways to communicate technical material.</li></ul></li>
+<li class="entry"><strong>iLakua Technology, Remote — APM&amp; AI Prompt Specialist Intern(LLM/GenAI)</strong><br><span class="meta">Oct 2022 - Dec 2024</span><ul class="details"><li>Leveraged Midjourney to generate product and model imagery, increasing pattern generation efficiency by 80% and reducing photography costs by 90%.</li>
+<li>Designed a batch upload utility, streamlining product management and reducing repetitive tasks by 50%.</li>
+<li>Organized team-building activities each quarter.</li></ul></li>
+<li><strong>Hefei Administrative Center Hefei, Anhui, China — Senior Staff</strong><br>Jul 2014 - Jun 2019<br>💻 Developed platform front-end, improving the performance of working systems and saving users 20% of the time by reorganizing datasets.</li></ul></section>
+    <section><h2>🎓 Education</h2>
+<ul><li>University of Missouri, Columbia, MO — PhD in Computer Science | Aug 2021 – Present | GPA 3.85/4.0</li>
+<li>Tsinghua University, Beijing, China — Master of Science in Computer Science | Mar 2016 – Jan 2019</li>
+<li>Beijing Electronic Science and Technology Institute, Beijing, China — Bachelor of Science in Computing Science | Sep 2010 – Jun 2014</li></ul></section>
+    <section><h2>🛠 Skills</h2>
+<p class="skill"><strong>Programming Languages:</strong> Python, Java, Kotlin, C, SQL, R</p>
+<p class="skill"><strong>Search &amp; Retrieval:</strong> OpenSearch, BM25, vector search, re-ranking, nDCG, offline evaluation</p>
+<p class="skill"><strong>ML/DL &amp; AI:</strong> PyTorch, TensorFlow, scikit-learn, NumPy, Pandas; CNNs (EfficientNet, ResNet, ConvNeXt); LLMs, GenAI; Agent Design, Multi-Agent Systems, Retrieval-Augmented Generation (RAG)</p>
+<p class="skill"><strong>Backend:</strong> REST API concepts, Cloud services (AWS)</p>
+<p class="skill"><strong>Frontend:</strong> TypeScript</p>
+<p class="skill"><strong>Image Processing &amp; Computer Vision:</strong> Object detection, Segmentation, Habitat detection, Data preprocessing; YOLOv5, Faster R-CNN, SAM</p>
+<p class="skill"><strong>Databases &amp; Tools:</strong> SQL, Git, Linux/UNIX, Windows, Tableau</p>
+<p class="skill"><strong>Technical Communication &amp; Training:</strong> Technical instruction, live coding, code walkthroughs, mentoring, technical presentations to groups of 20–60+ students</p></section>
+    <section><h2>📁 Projects</h2>
+<ul class="projects"><li class="entry"><strong>AI/ML Identifiability Limits in Coding Agent Benchmarks — LLM Agents + Evaluation</strong><ul class="details"><li>Formalized prompt-level identifiability for coding tasks, separating failures caused by missing task information from solver errors.</li><li>Audited SWE-bench Verified top-system failures: 38/47 hinge on unstated test requirements and 10 are non-identifiable. Clarifications recover 21/47. Built the LazyPatch benchmark, where LLMs hit the predicted 1/2 and 1/3 ceilings and reach 100% once the task is specified.</li></ul></li>
+<li class="entry"><strong>AI/ML Prompt-Caching Cost Study of Multi-Task LLM Agents — LLM Systems + Cost Modeling</strong><ul class="details"><li>Built an exact token-level billing replay over 256 public agent trajectories, comparing shared vs. isolated conversations across cache lifetimes and prices.</li><li>Proved when sharing can beat isolation. It wins on &lt;3% of the cost space and saves a median of only 0.4–2.5%.</li></ul></li>
+<li class="entry"><strong>AI/ML Fish Age Estimation (AGO Framework) — CV + Regression</strong><ul class="details"><li>Built an EfficientNetV2-L–based model with residual self-attention gate + deeper MLP head; trained with progressive unfreezing and ε-insensitive Rounded-L1 for integer-consistent ages.</li><li>On ~3.3k freshwater otoliths, improved rounded exact accuracy vs. strong CNN baselines: Bass 90.2% vs. 74.5%, Crappie 98.5% vs. 97.1%, Walleye 94.3% (tie; higher F1); reduced MAE correspondingly.</li><li>Cross-dataset generalization on ICES cod: North Sea 63.3% exact / 95.5% off-by-one, Baltic 90.8% / 99.6%; transferred to tree-ring counting (exact 37.5%→62.5%, off-by-one 68.8%→93.8%).</li></ul></li>
+<li class="entry"><strong>Personal Nutritionist AI (Google AI2 Intern Hackathon 2026) — Multi-Agent System + RAG</strong><ul class="details"><li>Engineered a multi-agent system using Gemini (Pro/Flash tiers) to provide personalized, evidence-based meal recommendations for corporate cafeteria environments.</li><li>Integrated a RAG-based knowledge base and stateful memory to enforce dietary diversity and apply advanced physiological adjustments, including nutrient timing and hormonal cycle awareness.</li><li>Developed a dynamic parsing orchestrator to convert complex macro targets into intuitive, visual “Hand Portions,” significantly reducing cognitive load for users.</li></ul></li>
+<li class="entry"><strong>AI/ML Birds &amp; Habitat Detection — Detection + Segmentation + VLM Assist</strong><ul class="details"><li>Deployed YOLOv5 / RetinaNet / Faster R-CNN on drone imagery; SAM for habitat Segmentation; integrated LLaMA / Janus-Pro for image understanding and labeling assistance.</li><li>Managed large-scale data curation, annotation QA, and SQL pipelines; reported end-to-end precision/recall and throughput.</li></ul></li></ul></section>
+    <section><h2>📚 Publications</h2>
+<ul><li>“Detection Probability and Bias in Machine-Learning-Based Unoccupied Aerial System Non-Breeding Waterfowl Surveys.” Drones, 2024-02-06. (Published)</li>
+<li>“A Symmetric Layer–Union Audit of Component Collapse in Hierarchical Procedural Corpora.” Jiuyi Zheng, Gan Xu. Preprint submitted to arXiv; arXiv:2608.08892</li>
+<li>“Alignment-Guided Deep Learning for Otolith Age Estimation” Under review.</li>
+<li>“Identifiability Limits in Coding Agent Benchmarks” Under review</li>
+<li>“Isolation Is Nearly Free: A Cost Study of Multi-Task Agentic Systems” Under review</li>
+<li>“Day–Night Intra-class Imbalance in Camera Trap Image Classification” Under review</li></ul></section>
+    <section><h2>🏅 Certifications</h2>
+<ul><li>Recommender Systems Specialization, University of Minnesota (Coursera)</li>
+<li>Machine Learning, DeepLearning.AI, Stanford University (Coursera)</li>
+<li>Google Prompting Essentials, Google (Coursera)</li>
+<li>Generative AI: Prompt Engineering Basics, IBM (Coursera)</li>
+<li>Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</li>
+<li>Oracle AI Vector Search Professional</li>
+<li>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</li>
+<li>Leadership and Influencing Skills, Google (Coursera)</li></ul></section>
     <h2>🗣 Languages</h2>
     <p>Chinese, English</p>
     
@@ -54,8 +91,6 @@
     <p>🚴 <strong>Riding Bicycle:</strong> Cycling is my go-to form of exercise and relaxation. It allows me to explore the outdoors and stay fit at the same time.</p>
     <p>🔧 <strong>Building Projects:</strong> I love creating small projects that make life easier. Whether it's a piece of software or a handy gadget, I enjoy the process of bringing ideas to life.</p>
     <p>👫 <strong>Making Friends:</strong> I enjoy meeting new people and making friends. If you want to know more about me or have any questions about my previous projects, feel free to contact me.</p>
-    
-   
-</div>
+</main>
 </body>
 </html>
